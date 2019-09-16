@@ -141,7 +141,7 @@ eclmap
 343 ? spellEnd
 344 ? setChapter
 345 ? enmKillAll
-346 ? EtProtectRange
+346 ? etProtectRange
 347 ? lifeMarker
 348 ? spellUnused
 349 ? rankF3

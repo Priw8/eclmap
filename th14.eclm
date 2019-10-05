@@ -136,8 +136,8 @@ eclmap
 429 ? moveVelNMTime
 430 ? moveVelNMRel
 431 ? moveVelNMRelTime
-432 ? move432
-433 ? move433
+432 ? moveEnm
+433 ? moveEnmRel
 434 ? moveCurve
 435 ? moveCurveRel
 436 ? moveAddTime

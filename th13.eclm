@@ -245,8 +245,8 @@ eclmap
 635 ? etCancel2
 636 ? etClear2
 637 ? funcCall
-638 ? unknown638
-639 ? unknown639
+638 ? scoreAdd
+639 ? funcSet2
 640 ? etExSub
 
 700 ? laserNew

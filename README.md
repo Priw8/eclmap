@@ -1,5 +1,5 @@
 # Collection of thecl eclmaps
-Usage: add `-m thxx.eclm` to the command line parameters when compiling/decompiling with thecl.
+Usage: add `-m thxx.eclm` to the command line parameters when compiling/decompiling with thecl. Note: if you're looking for eclmaps that use the new format, check out [this branch](https://github.com/Priw8/eclmap/tree/new-format).
 
 Eclmaps by games:
 

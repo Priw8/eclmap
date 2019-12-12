@@ -3,7 +3,9 @@ Usage: add `-m thxx.eclm` to the command line parameters when compiling/decompil
 
 Eclmaps by games:
 
-- TH06-TH095 - none at the moment
+- TH06-TH07 - none at the moment
+- TH08 - `th08.eclm`
+- TH09-TH95 - none at the moment
 - TH10-TH11 - `th11.eclm`
 - TH12-TH128 - `th12.eclm`
 - TH13 - `th13.eclm`

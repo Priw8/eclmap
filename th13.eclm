@@ -10,7 +10,7 @@
 15 callAsync
 16 callAsyncId
 17 killAsync
-21 unknown21
+21 killAllAsync
 22 debug22
 23 wait
 24 waitf

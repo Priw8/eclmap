@@ -98,12 +98,12 @@
 328 anmAlphaTime
 329 anmScale
 330 anmScaleTime
-331 anm331
-332 anm332
+331 anmAlpha2
+332 anmAlpha2Time
 333 anm333
 334 anm334
 335 anmScale2
-336 anm336
+336 anmLayer
 337 anmPlayPos
 
 400 movePos

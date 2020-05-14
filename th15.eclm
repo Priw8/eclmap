@@ -90,7 +90,7 @@
 320 anmMove
 321 enmMapleEnemy
 322 enm322
-323 enm323
+323 deathAnm
 324 enm324
 325 anmColor
 326 anmColorTime
@@ -214,12 +214,12 @@
 556 setDeath
 557 unknown557
 558 flagMirror
-559 unknown559
+559 enmLimit
 560 unknown560
 561 die
-562 unknown562
+562 dropItemsSp
 563 unknown563
-564 unknown564
+564 hitboxRotate
 565 bombInvuln
 566 unknown566
 567 unknown567
@@ -357,7 +357,7 @@
 -9964 PLAYER_Y2
 -9963 BOSS_X
 -9962 BOSS_Y
--9961 UNKNOWN61
+-9961 ANM_ID    # unknown purpose?
 -9960 RANK
 -9959 DIFF
 -9958 FINAL_ANGLE
@@ -408,7 +408,7 @@
 -9913 DS_PHOTOCOUNT
 -9912 DS4
 -9911 ANGLE_BOSS
--9910 UNKNOWN10
+-9910 SPEED_BOSS
 -9909 UNKNOWN9
 -9908 ENM_CNT
 -9907 SPELL_ID
@@ -428,7 +428,7 @@
 -9915 %
 -9987 %
 -9928 $
--9910 $
+-9910 %
 -9916 %
 -9981 %
 -9920 %

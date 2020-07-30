@@ -1,0 +1,157 @@
+!anmmap
+!ins_names
+1 end
+3 stop
+5 case
+6 wait
+
+100 iset
+101 fset
+102 iadd
+103 fadd
+104 isub
+105 fsub
+106 imul
+107 fmul
+108 idiv
+109 fdiv
+110 imod
+111 fmod
+112 isetAdd
+113 fsetAdd
+114 isetSub
+115 fsetSub
+116 isetMul
+117 fsetMul
+118 isetDiv
+119 fsetDiv
+120 isetMod
+121 fsetMod
+122 isetRand
+123 fsetRand
+124 fsin
+125 fcos
+126 ftan
+127 facos
+128 fatan
+129 validRad
+130 circlePos   # ins_130(&x, &y, ang, dist) -> *x = cos(ang)*dist; *y = sin(ang*dist)
+131 circlePosRand
+# ins_131(float* x, float* y, float min, float max) {
+#     float r = randf() * (max - min) + min; // randf = (0.0f, 1.0f)
+#     float ang = randrad();  // randrad = (-pi, pi)
+#     *x = cos(ang) * r;
+#     *y = sin(ang) * r;
+# }
+
+200 jmp
+201 jmpDec
+# based on x86 asm conditional jmp names except there's a type prefix i(nt) or f(loat)
+202 ije
+203 fje
+204 ijne
+205 fjne
+206 ijl
+207 fjl
+208 ijle
+209 fjle
+210 ijg
+211 fjg
+212 ijge
+213 fjge
+
+300 sprite
+301 spriteRand
+302 type
+303 blendMode
+304 layer
+308 flipX
+309 flipY
+
+400 pos
+401 rotate
+402 scale
+403 alpha
+404 color
+405 alpha2
+406 color2
+407 posTime
+408 colorTime
+409 alphaTime
+410 rotateTimeEx
+411 rotateTime
+412 scaleTime
+413 color2Time
+414 alpha2Time
+415 angleVel
+416 scale2
+417 alphaTime2
+# unknown
+420 moveBezier
+421 anchor
+# unknown
+424 rotateAuto
+425 scrollX
+426 scrollY
+# further instructions are either unknown, or google translate makes no sense (TODO: check them)
+
+# TODO: what are the differences?
+500 createScript
+501 createScript2
+502 createScript3
+503 createScript4
+504 createScript5
+
+600 textureCircle   # something something twists texture into a ring, this instr is wack, use scale ins to control radius
+# unknown
+603 drawRect
+# names below may be inaccurate, need checking
+604 drawStar
+605 drawStarBorder
+606 drawRect2
+607 drawRect3
+608 drawRect4
+
+!gvar_names
+10000 I0
+10001 I1
+10002 I2
+10003 I3
+
+10004 F0
+10005 F1
+10006 F2
+10007 F3
+
+10008 I4
+10009 I5
+
+10010 RANDRAD
+10011 RANDF
+10012 RANDF2
+
+10022 RAND
+
+10031 RANDFREP   # RANDF but using the ECL RNG seed; as such, will be saved in replays
+
+!gvar_types
+10000 $
+10001 $
+10002 $
+10003 $
+
+10004 %
+10005 %
+10006 %
+10007 %
+
+10008 $
+10009 $
+
+10010 %
+10011 %
+10012 %
+
+10022 $
+
+10031 %

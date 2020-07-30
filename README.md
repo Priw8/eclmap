@@ -1,8 +1,9 @@
-# Collection of thecl eclmaps
-Usage: add `-m thxx.eclm` to the command line parameters when compiling/decompiling with thecl. Do note that these eclmaps are in the new format, and won't work with old versions of thecl.
-
-Eclmaps by games:
-
+# Collection of mnemonic mappings for various thtk programs
+Usage: add `-m mapfile` to the command line parameters when compiling/decompiling (this is the common for all thtk programs). `mapfile` is filename of the appropriate mnemonic map (refer to the list below). Do note that ECL mappings are in the new format, and won't work in old versions of thecl.  
+  
+As of now, this repository contains mappings for ECL and ANM, as thecl and thanm are the only programs that actually support them currently. For thanm, mappings are in the `anmmap` folder, and for thecl in `eclmap`.  
+  
+**eclmaps**:
 - TH06-TH07 - none at the moment
 - TH08 - `th08.eclm`
 - TH09-TH95 - none at the moment
@@ -13,4 +14,7 @@ Eclmaps by games:
 - TH15 - `th15.eclm`
 - TH16-TH165 - `th16.eclm`
 - TH17 - `th17.eclm`
-- alcostg - untested, but `th11.eclm` should be mostly fine
+- alcostg - untested, but `th11.eclm` should be mostly fine  
+  
+**anmmaps**:
+- TH13-TH17 - `v8.anmm`

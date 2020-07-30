@@ -1,427 +1,531 @@
-eclmap
-0 ? nop
-1 ? delete
-10 ? return
-11 ? call
-12 ? jmp
-13 ? jmpEq
-14 ? jmpNeq
-15 ? callAsync
-16 ? callAsyncId
-17 ? killAsync
-21 ? killAllAsync
-22 ? debug22
-23 ? wait
-24 ? waitf
-27 ? unknown27
-30 ? unknown30
-31 ? unknown31
-40 ? stackAlloc
-42 ? push
-43 ? set
-44 ? pushf
-45 ? setf
-50 ? add
-51 ? addf
-52 ? sub
-53 ? subf
-54 ? mul
-55 ? mulf
-56 ? div
-57 ? divf
-58 ? mod
-59 ? eq
-60 ? eqf
-61 ? neq
-62 ? neqf
-63 ? less
-64 ? lessf
-65 ? leq
-66 ? leqf
-67 ? greater
-68 ? greaterf
-69 ? geq
-70 ? geqf
-71 ? not
-72 ? notf
-73 ? or
-74 ? and
-75 ? xor
-76 ? bit_or
-77 ? bit_and
-78 ? dec
-79 ? stackSin
-80 ? stackCos
-81 ? mathCirclePos
-82 ? validRad
-83 ? neg
-84 ? negf
-85 ? squareSum
-86 ? squareSumRoot
-87 ? mathAngle
-88 ? stackSqrt
-89 ? linearFunc
-90 ? pointRotate
-91 ? floatTime
-92 ? math92
-93 ? math93
+!eclmap
+!ins_names
+0 nop
+1 delete
+10 ret
+11 call
+12 jmp
+13 jmpEq
+14 jmpNeq
+15 callAsync
+16 callAsyncId
+17 killAsync
+21 killAllAsync
+22 debug22
+23 wait
+24 waitf
+27 unknown27
+30 unknown30
+31 unknown31
+40 stackAlloc
+42 pushi
+43 seti
+44 pushf
+45 setf
+50 addi
+51 addf
+52 subi
+53 subf
+54 muli
+55 mulf
+56 divi
+57 divf
+58 modi
+59 eqi
+60 eqf
+61 neqi
+62 neqf
+63 lessi
+64 lessf
+65 leqi
+66 leqf
+67 greateri
+68 greaterf
+69 geqi
+70 geqf
+71 noti
+72 notf
+73 or
+74 and
+75 xor
+76 bit_or
+77 bit_and
+78 deci
+79 stackSin
+80 stackCos
+81 mathCirclePos
+82 validRad
+83 negi
+84 negf
+85 squareSum
+86 squareSumRoot
+87 mathAngle
+88 stackSqrt
+89 linearFunc
+90 pointRotate
+91 floatTime
+92 math92
+93 math93
 
-300 ? enmCreate
-301 ? enmCreateA
-302 ? anmSelect
-303 ? anmSetSprite
-304 ? enmCreateM
-305 ? enmCreateAM
-306 ? anmSetMain
-307 ? anmPlay
-308 ? anmPlayAbs
-309 ? enmCreateF
-310 ? enmCreateAF
-311 ? enmCreateMF
-312 ? enmCreateAMF
-313 ? anmSelectedPlay
-314 ? anmPlayHigh
-315 ? anmPlayRotate
-316 ? anm316
-317 ? anmSwitch
-318 ? anmReset
-319 ? anmRotate
-320 ? anmMove
-321 ? enmMapleEnemy
-322 ? enm322
-323 ? enm323
-324 ? enm324
-325 ? anmColor
-326 ? anmColorTime
-327 ? anmAlpha
-328 ? anmAlphaTime
-329 ? anmScale
-330 ? anmScaleTime
-331 ? anm331
-332 ? anm332
-333 ? anm333
-334 ? anm334
-335 ? anmScale2
-336 ? anm336
-337 ? anmBlendMode
-338 ? anmPlayPos
-339 ? anm339
-340 ? anm340
+300 enmCreate
+301 enmCreateA
+302 anmSelect
+303 anmSetSprite
+304 enmCreateM
+305 enmCreateAM
+306 anmSetMain
+307 anmPlay
+308 anmPlayAbs
+309 enmCreateF
+310 enmCreateAF
+311 enmCreateMF
+312 enmCreateAMF
+313 anmSelectedPlay
+314 anmPlayHigh
+315 anmPlayRotate
+316 anm316
+317 anmSwitch
+318 anmReset
+319 anmRotate
+320 anmMove
+321 enmMapleEnemy
+322 enm322
+323 deathAnm
+324 enmPos2
+325 anmColor
+326 anmColorTime
+327 anmAlpha
+328 anmAlphaTime
+329 anmScale
+330 anmScaleTime
+331 anmAlpha2
+332 anmAlpha2Time
+333 anm333
+334 anm334
+335 anmScale2
+336 anmLayer
+337 anmBlendMode
+338 anmPlayPos
+339 anm339
+340 enmDelete
 
-400 ? movePos
-401 ? movePosTime
-402 ? movePosRel
-403 ? movePosRelTime
-404 ? moveVel
-405 ? moveVelTime
-406 ? moveVelRel
-407 ? moveVelRelTime
-408 ? moveCircle
-409 ? moveCircleTime
-410 ? moveCircleRel
-411 ? moveCircleRelTime
-412 ? moveRand
-413 ? moveRandRel
-414 ? moveBoss
-415 ? moveBossRel
-416 ? movePos3d
-417 ? movePos3dRel
-418 ? moveAdd
-419 ? move419
-420 ? moveEllipse
-421 ? moveEllipseTime
-422 ? moveEllipseRel
-423 ? moveEllipseRelTime
-424 ? moveSetMirror
-425 ? moveBezier
-426 ? moveBezierRel
-427 ? moveReset
-428 ? moveVelNM
-429 ? moveVelNMTime
-430 ? moveVelNMRel
-431 ? moveVelNMRelTime
-432 ? moveEnm
-433 ? moveEnmRel
-434 ? moveCurve
-435 ? moveCurveRel
-436 ? moveAddTime
-437 ? moveAddRelTime
-438 ? moveCurveAdd
-439 ? moveCurveAddRel
-440 ? moveAngle
-441 ? moveAngleTime
-442 ? moveAngleRel
-443 ? moveAngleRelTime
-444 ? moveSpeed
-445 ? moveSpeedTime
-446 ? moveSpeedRel
-447 ? moveSpeedRelTime
+400 movePos
+401 movePosTime
+402 movePosRel
+403 movePosRelTime
+404 moveVel
+405 moveVelTime
+406 moveVelRel
+407 moveVelRelTime
+408 moveCircle
+409 moveCircleTime
+410 moveCircleRel
+411 moveCircleRelTime
+412 moveRand
+413 moveRandRel
+414 moveBoss
+415 moveBossRel
+416 movePos3d
+417 movePos3dRel
+418 moveAdd
+419 move419
+420 moveEllipse
+421 moveEllipseTime
+422 moveEllipseRel
+423 moveEllipseRelTime
+424 moveSetMirror
+425 moveBezier
+426 moveBezierRel
+427 moveReset
+428 moveVelNM
+429 moveVelNMTime
+430 moveVelNMRel
+431 moveVelNMRelTime
+432 moveEnm
+433 moveEnmRel
+434 moveCurve
+435 moveCurveRel
+436 moveAddTime
+437 moveAddRelTime
+438 moveCurveAdd
+439 moveCurveAddRel
+440 moveAngle
+441 moveAngleTime
+442 moveAngleRel
+443 moveAngleRelTime
+444 moveSpeed
+445 moveSpeedTime
+446 moveSpeedRel
+447 moveSpeedRelTime
 
-500 ? setHurtbox
-501 ? setHitbox
-502 ? flagSet
-503 ? flagClear
-504 ? moveLimit
-505 ? moveLimitReset
-506 ? dropClear
-507 ? dropExtra
-508 ? dropArea
-509 ? dropItems
-510 ? dropMain
-511 ? lifeSet
-512 ? setBoss
-513 ? timerReset
-514 ? setNext
-515 ? setInvuln
-516 ? playSound
-517 ? setScreenShake
-518 ? dialogRead
-519 ? dialogWait
-520 ? unknown520
-521 ? setTimeout
-522 ? spellEx
-523 ? spellEnd
-524 ? setChapter
-525 ? enmKillAll
-526 ? etProtectRange
-527 ? lifeMarker
-528 ? spellUnused
-529 ? rankF3
-530 ? rankF5
-531 ? rankF2
-532 ? rankI3
-533 ? rankI5
-534 ? rankI2
-535 ? diffI
-536 ? diffF
-537 ? spell
-538 ? spell2
-539 ? spell3
-540 ? stars
-541 ? unknown541
-542 ? spellTimeout
-543 ? unknown543
-544 ? unknown544
-545 ? reset
-546 ? bombShield
-547 ? gameSpeed
-548 ? diffWait
-549 ? unknown549
-550 ? unknown550
-551 ? unknown551
-552 ? zIndex
-553 ? hitSound
-554 ? stageLogo
-555 ? enmAlive
-556 ? setDeath
-557 ? unknown557
-558 ? flagMirror
-559 ? unknown559
-560 ? unknown560
-561 ? die
-562 ? unknown562
-563 ? unknown563
-564 ? unknown564
-565 ? bombInvuln
-566 ? unknown566
-567 ? unknown567
-568 ? spellMode
-569 ? unknown569
-570 ? unknown570
-571 ? unknown571
-572 ? lifeNow
-573 ? unknown573
+500 setHurtbox
+501 setHitbox
+502 flagSet
+503 flagClear
+504 moveLimit
+505 moveLimitReset
+506 dropClear
+507 dropExtra
+508 dropArea
+509 dropItems
+510 dropMain
+511 lifeSet
+512 setBoss
+513 timerReset
+514 setNext
+515 setInvuln
+516 playSound
+517 setScreenShake
+518 dialogRead
+519 dialogWait
+520 unknown520
+521 setTimeout
+522 spellEx
+523 spellEnd
+524 setChapter
+525 enmKillAll
+526 etProtectRange
+527 lifeMarker
+528 spellUnused
+529 rankF3
+530 rankF5
+531 rankF2
+532 rankI3
+533 rankI5
+534 rankI2
+535 diffI
+536 diffF
+537 spell
+538 spell2
+539 spell3
+540 stars
+541 noHitboxDur
+542 spellTimeout
+543 unknown543
+544 unknown544
+545 reset
+546 bombShield
+547 gameSpeed
+548 diffWait
+549 unknown549
+550 unknown550
+551 unknown551
+552 zIndex
+553 hitSound
+554 stageLogo
+555 enmAlive
+556 setDeath
+557 fogTime
+558 flagMirror
+559 enmLimit
+560 unknown560
+561 die
+562 dropItemsSp
+563 unknown563
+564 hitboxRotate
+565 bombInvuln
+566 unknown566
+567 unknown567
+568 spellMode
+569 unknown569
+570 unknown570
+571 unknown571
+572 lifeNow
+573 unknown573
 
-600 ? etNew
-601 ? etOn
-602 ? etSprite
-603 ? etOffset
-604 ? etAngle
-605 ? etSpeed
-606 ? etCount
-607 ? etAim
-608 ? etSound
-609 ? etExSet
-610 ? etExSet2
-611 ? etEx
-612 ? etEx2
-613 ? etClearAll
-614 ? etCopy
-615 ? etCancel
-616 ? etClear
-617 ? etSpeedR3
-618 ? etSpeedR5
-619 ? etSpeedR2
-620 ? etCountR3
-621 ? etCountR5
-622 ? etCountR2
-623 ? angleToPlayer
-624 ? etSpeedD
-625 ? etCountD
-626 ? etOffsetRad
-627 ? etDist
-628 ? etOffsetAbs
-629 ? fog
-630 ? callSTD
-631 ? lifeHide
-632 ? funcSet
-633 ? flagExtDmg
-634 ? unknown634
-635 ? etCancel2
-636 ? etClear2
-637 ? funcCall
-638 ? scoreAdd
-639 ? funcSet2
-640 ? etExSub
-641 ? etExSubtract
+600 etNew
+601 etOn
+602 etSprite
+603 etOffset
+604 etAngle
+605 etSpeed
+606 etCount
+607 etAim
+608 etSound
+609 etExSet
+610 etExSet2
+611 etEx
+612 etEx2
+613 etClearAll
+614 etCopy
+615 etCancel
+616 etClear
+617 etSpeedR3
+618 etSpeedR5
+619 etSpeedR2
+620 etCountR3
+621 etCountR5
+622 etCountR2
+623 angleToPlayer
+624 etSpeedD
+625 etCountD
+626 etOffsetRad
+627 etDist
+628 etOffsetAbs
+629 fog
+630 callSTD
+631 lifeHide
+632 funcSet
+633 flagExtDmg
+634 unknown634
+635 etCancel2
+636 etClear2
+637 funcCall
+638 scoreAdd
+639 funcSet2
+640 etExSub
+641 etExSubtract
 
-700 ? laserNew
-701 ? laserTiming
-702 ? laserOn
-703 ? laserStOn
-704 ? laserOffset
-705 ? laserTrajectory
-706 ? laserStLength
-707 ? laserStWidth
-708 ? laserStAngle
-709 ? laserStRotation
-710 ? laserStEnd
-711 ? laserCuOn
-712 ? hitboxRect
-713 ? unknown713
-714 ? unknown714
+700 laserNew
+701 laserTiming
+702 laserOn
+703 laserStOn
+704 laserOffset
+705 laserTrajectory
+706 laserStLength
+707 laserStWidth
+708 laserStAngle
+709 laserStRotation
+710 laserStEnd
+711 laserCuOn
+712 etCancelRect
+713 unknown713
+714 unknown714
 
-800 ? enmCall
-801 ? enmPos
-802 ? unknown802
+800 enmCall
+801 enmPos
+802 unknown802
 
-900 ? debug900
-901 ? debug901
-902 ? debug902
-903 ? debug903
-904 ? debug904
+900 debug900
+901 debug901
+902 debug902
+903 debug903
+904 debug904
 
-1000 ? spec0
-1001 ? spec1
-1002 ? spec2
-1003 ? spec3
-1004 ? spec4
-1005 ? spec5
-1006 ? spec6
-1007 ? spec7
-1008 ? spec8
-1009 ? spec9
-1010 ? spec10
-1011 ? spec11
-1012 ? spec12
-1013 ? spec13
-1014 ? spec14
-1015 ? spec15
-1016 ? spec16
-1017 ? spec17
-1018 ? spec18
-1019 ? spec19
-1020 ? spec20
+1000 spec0
+1001 spec1
+1002 spec2
+1003 spec3
+1004 spec4
+1005 spec5
+1006 spec6
+1007 spec7
+1008 spec8
+1009 spec9
+1010 spec10
+1011 spec11
+1012 spec12
+1013 spec13
+1014 spec14
+1015 spec15
+1016 spec16
+1017 spec17
+1018 spec18
+1019 spec19
+1020 spec20
 
--10000 $ RAND
--9999 % RANDF
--9998 % RANDRAD
--9997 % FINAL_X
--9996 % FINAL_Y
--9995 % ABS_X
--9994 % ABS_Y
--9993 % REL_X
--9992 % REL_Y
--9991 % PLAYER_X
--9990 % PLAYER_Y
--9989 % ANGLE_PLAYER
--9988 $ TIME
--9987 % RANDF2
--9986 $ TIMEOUT
--9985 $ I0
--9984 $ I1
--9983 $ I2
--9982 $ I3
--9981 % F0
--9980 % F1
--9979 % F2
--9978 % F3
--9977 % FINAL_X2
--9976 % FINAL_Y2
--9975 % ABS_X2
--9974 % ABS_Y2
--9973 % REL_X2
--9972 % REL_Y2
--9971 % ABS_ANGLE
--9970 % REL_ANGLE
--9969 % ABS_SPEED
--9968 % REL_SPEED
--9967 % ABS_ORIGIN_DIST
--9966 % REL_ORIGIN_DIST
--9965 % PLAYER_X2
--9964 % PLAYER_Y2
--9963 % BOSS_X
--9962 % BOSS_Y
--9961 % UNKNOWN61
--9960 $ RANK
--9959 $ DIFF
--9958 % FINAL_ANGLE
--9957 $ TRUE
--9956 % ABS_ANGLE_PLAYER
--9955 % REL_ANGLE_PLAYER
--9954 $ LIFE
--9953 $ EASY
--9952 $ NORMAL
--9951 $ HARD
--9950 $ LUNATIC
--9949 $ MISS_COUNT
--9948 $ BOMB_COUNT
--9947 $ CAPTURE
--9946 $ ENM_CNT_REAL
--9945 $ SHOTTYPE
--9944 % DIST_PLAYER
--9943 $ BI0
--9942 $ BI1
--9941 $ BI2
--9940 $ BI3
--9939 % BF0
--9938 % BF1
--9937 % BF2
--9936 % BF3
--9935 % F4
--9934 % F5
--9933 % F6
--9932 % F7
--9931 $ LAST_ENM_ID
--9930 $ POWER
--9929 $ DS1
--9928 $ DS2
--9927 $ DS3
--9926 $ GI0
--9925 $ GI1
--9924 $ GI2
--9923 $ GI3
--9922 % GF0
--9921 % GF1
--9920 % GF2
--9919 % GF3
--9918 % GF4
--9917 % GF5
--9916 % GF6
--9915 % GF7
--9914 $ ID
--9913 $ DS_PHOTOCOUNT
--9912 $ DS4
--9911 % ANGLE_BOSS
--9910 $ UNKNOWN10
--9909 $ UNKNOWN9
--9908 $ ENM_CNT
--9907 $ SPELL_ID
--9906 $ MIRROR
--9904 $ MISS_COUNT_GLOBAL
+!gvar_names
+-10000 RAND
+-9999 RANDF
+-9998 RANDRAD
+-9997 FINAL_X
+-9996 FINAL_Y
+-9995 ABS_X
+-9994 ABS_Y
+-9993 REL_X
+-9992 REL_Y
+-9991 PLAYER_X
+-9990 PLAYER_Y
+-9989 ANGLE_PLAYER
+-9988 TIME
+-9987 RANDF2
+-9986 TIMEOUT
+-9985 I0
+-9984 I1
+-9983 I2
+-9982 I3
+-9981 F0
+-9980 F1
+-9979 F2
+-9978 F3
+-9977 FINAL_X2
+-9976 FINAL_Y2
+-9975 ABS_X2
+-9974 ABS_Y2
+-9973 REL_X2
+-9972 REL_Y2
+-9971 ABS_ANGLE
+-9970 REL_ANGLE
+-9969 ABS_SPEED
+-9968 REL_SPEED
+-9967 ABS_ORIGIN_DIST
+-9966 REL_ORIGIN_DIST
+-9965 PLAYER_X2
+-9964 PLAYER_Y2
+-9963 BOSS_X
+-9962 BOSS_Y
+-9961 ANM_ID    # unknown purpose?
+-9960 RANK
+-9959 DIFF
+-9958 FINAL_ANGLE
+-9957 TRUE
+-9956 ABS_ANGLE_PLAYER
+-9955 REL_ANGLE_PLAYER
+-9954 LIFE
+-9953 EASY
+-9952 NORMAL
+-9951 HARD
+-9950 LUNATIC
+-9949 MISS_COUNT
+-9948 BOMB_COUNT
+-9947 CAPTURE
+-9946 ENM_CNT_REAL
+-9945 SHOTTYPE
+-9944 DIST_PLAYER
+-9943 BI0
+-9942 BI1
+-9941 BI2
+-9940 BI3
+-9939 BF0
+-9938 BF1
+-9937 BF2
+-9936 BF3
+-9935 F4
+-9934 F5
+-9933 F6
+-9932 F7
+-9931 LAST_ENM_ID
+-9930 POWER
+-9929 DS1
+-9928 DS2
+-9927 DS3
+-9926 GI0
+-9925 GI1
+-9924 GI2
+-9923 GI3
+-9922 GF0
+-9921 GF1
+-9920 GF2
+-9919 GF3
+-9918 GF4
+-9917 GF5
+-9916 GF6
+-9915 GF7
+-9914 ID
+-9913 DS_PHOTOCOUNT
+-9912 DS4
+-9911 ANGLE_BOSS
+-9910 SPEED_BOSS
+-9909 UNKNOWN9
+-9908 ENM_CNT
+-9907 SPELL_ID
+-9906 MIRROR
+-9904 MISS_COUNT_GLOBAL
 
--9903 $ HYPER
--9902 $ GRAZE_RECENT
--9901 $ GOASTS
--9900 $ HYPERDYING
--9899 $ ACHIEVEMENT_MODE
+-9903 HYPER
+-9902 GRAZE_RECENT
+-9901 GOASTS
+-9900 HYPERDYING
+-9899 ACHIEVEMENT_MODE
+!gvar_types
+-9953 $
+-9949 $
+-9982 $
+-9970 %
+-9983 $
+-9931 $
+-9992 %
+-9936 %
+-9994 %
+-9942 $
+-9915 %
+-9987 %
+-9928 $
+-9910 %
+-9916 %
+-9981 %
+-9920 %
+-9996 %
+-9899 $
+-9971 %
+-9991 %
+-9965 %
+-9900 $
+-9985 $
+-9978 %
+-9941 $
+-9901 $
+-9927 $
+-9955 %
+-9945 $
+-9947 $
+-9930 $
+-9932 %
+-9904 $
+-9940 $
+-9951 $
+-9918 %
+-9935 %
+-9952 $
+-9914 $
+-9907 $
+-9967 %
+-9919 %
+-9913 $
+-9921 %
+-9998 %
+-9995 %
+-9962 %
+-9969 %
+-9963 %
+-9906 $
+-9929 $
+-9923 $
+-9986 $
+-9912 $
+-9999 %
+-9943 $
+-9958 %
+-9908 $
+-9909 $
+-9990 %
+-10000 $
+-9933 %
+-9917 %
+-9903 $
+-9972 %
+-9980 %
+-9948 $
+-9977 %
+-9988 $
+-9957 $
+-9950 $
+-9911 %
+-9934 %
+-9926 $
+-9938 %
+-9993 %
+-9959 $
+-9956 %
+-9984 $
+-9989 %
+-9960 $
+-9997 %
+-9944 %
+-9937 %
+-9924 $
+-9964 %
+-9939 %
+-9961 %
+-9976 %
+-9973 %
+-9966 %
+-9946 $
+-9974 %
+-9954 $
+-9922 %
+-9925 $
+-9902 $
+-9979 %
+-9968 %
+-9975 %

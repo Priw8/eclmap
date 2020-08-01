@@ -67,6 +67,8 @@
 304 layer
 308 flipX
 309 flipY
+311 resampleMode  # when scaling, 0=linear (blurry), 1=nearest (pixely)
+312 scrollMode  # 0=repeat 1=clamp 2=mirror
 # 313 controls how window resolution affects scaling of position and size
 # 314 has an effect when the parent rotates. (may also have other effects)
 

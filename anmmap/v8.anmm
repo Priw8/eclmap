@@ -67,6 +67,8 @@
 304 layer
 308 flipX
 309 flipY
+# 313 controls how window resolution affects scaling of position and size
+# 314 has an effect when the parent rotates. (may also have other effects)
 
 400 pos
 401 rotate
@@ -84,8 +86,9 @@
 413 color2Time
 414 alpha2Time
 415 angleVel
-416 scale2
-417 alphaTime2
+416 scaleGrowth  # adds to scale every frame
+417 alphaTime2  # not to be confused with 414...
+
 # unknown
 420 moveBezier
 421 anchor
@@ -93,6 +96,10 @@
 424 rotateAuto
 425 scrollX
 426 scrollY
+# 427-428 look like scrollXTime and scrollYTime but didn't work when tested
+# 434 is somehow scale-related
+# 435 is Time version of 434?
+# 438 controls origin of a root VM - 1 is for upscaled (pixely) stuff and 2 is for full-res stuff
 # further instructions are either unknown, or google translate makes no sense (TODO: check them)
 
 # Refer to https://gist.github.com/ExpHP/88bdef8f28f46fe4af6ab2e013b75896#creating-children
@@ -103,12 +110,12 @@
 504 scriptNew2         # TODO: how to name this???
 505 scriptNewPos
 506 scriptNew2Pos      # this one too...
+# 507(1) appears make an anm behave as if it has no parent.  No game really uses it...
 
 600 texCircle
 601 texArcEven
 602 texArc
 603 drawRect
-# names below may be inaccurate, need checking
 604 drawCircle
 605 drawCircleBorder
 606 drawRectGrad
@@ -139,9 +146,20 @@
 10011 RANDF
 10012 RANDF2
 
+# 10013-10015 are one of the position-related vectors
+# 10016-10018 is related to background camera position but still a mystery
+# 10019-10021 may be normalized direction that the background camera is facing?
+# 10023-10025 are one of the rotation-related vectors
+
 10022 RAND
 
-10031 RANDFREP   # RANDF but using the ECL RNG seed; as such, will be saved in replays
+# 10027 seems to be a scale factor for RANDF and RANDF2? (default 1)
+# 10028 seems to be a scale factor for RANDRAD (default pi)
+
+10030 RANDRADREP  # using the ECL RNG seed; as such, will be saved in replays
+10031 RANDFREP
+10032 RANDF2REP
+
 
 !gvar_types
 10000 $
@@ -163,4 +181,6 @@
 
 10022 $
 
+10030 %
 10031 %
+10032 %

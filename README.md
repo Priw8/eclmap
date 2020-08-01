@@ -1,7 +1,7 @@
 # Collection of mnemonic mappings for various thtk programs
 Usage: add `-m mapfile` to the command line parameters when compiling/decompiling (this is the common for all thtk programs). `mapfile` is filename of the appropriate mnemonic map (refer to the list below). Do note that ECL mappings are in the new format, and won't work in old versions of thecl.  
   
-As of now, this repository contains mappings for ECL and ANM, as thecl and thanm are the only programs that actually support them currently. For thanm, mappings are in the `anmmap` folder, and for thecl in `eclmap`.  
+As of now, this repository contains mappings for ECL and ANM, as thecl and thanm are the only programs that actually support them currently (not the latest releases; thecl has to be built from a reasonably-recent branch, and thanm has to be built from the `thanm-new-spec-format` branch as of writing). For thanm, mappings are in the `anmmap` folder, and for thecl in `eclmap`.  
   
 **eclmaps**:
 - TH06-TH07 - none at the moment
@@ -17,4 +17,5 @@ As of now, this repository contains mappings for ECL and ANM, as thecl and thanm
 - alcostg - untested, but `th11.eclm` should be mostly fine  
   
 **anmmaps**:
+*Note: anmmaps are early WIP and instruction names could change between versions without warning.*
 - TH13-TH17 - `v8.anmm`

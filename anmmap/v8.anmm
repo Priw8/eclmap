@@ -95,22 +95,31 @@
 426 scrollY
 # further instructions are either unknown, or google translate makes no sense (TODO: check them)
 
-# TODO: what are the differences?
-500 createScript
-501 createScript2
-502 createScript3
-503 createScript4
-504 createScript5
+# Refer to https://gist.github.com/ExpHP/88bdef8f28f46fe4af6ab2e013b75896#creating-children
+500 scriptNew
+501 scriptNewFront
+502 scriptNewUI
+503 scriptNewUIFront
+504 scriptNew2         # TODO: how to name this???
+505 scriptNewPos
+506 scriptNew2Pos      # this one too...
 
-600 textureCircle   # something something twists texture into a ring, this instr is wack, use scale ins to control radius
-# unknown
+600 texCircle
+601 texArcEven
+602 texArc
 603 drawRect
 # names below may be inaccurate, need checking
-604 drawStar
-605 drawStarBorder
-606 drawRect2
-607 drawRect3
-608 drawRect4
+604 drawCircle
+605 drawCircleBorder
+606 drawRectGrad
+607 drawRectShadow
+608 drawRectShadowGrad
+609 texCylinder3D
+610 texRing3D
+# uh, what was ins_611 again?
+# TH16+
+612 drawRectBorder
+613 drawLine
 
 !gvar_names
 10000 I0

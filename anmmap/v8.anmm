@@ -118,16 +118,15 @@
 601 texArcEven
 602 texArc
 603 drawRect
-604 drawCircle
-605 drawCircleBorder
+604 drawPoly
+605 drawPolyBorder
 606 drawRectGrad
 607 drawRectShadow
 608 drawRectShadowGrad
 609 texCylinder3D
 610 texRing3D
-# uh, what was ins_611 again?
-# TH16+
-612 drawRectBorder
+611 drawRing  # TH15+
+612 drawRectBorder  # TH16+
 613 drawLine
 
 !gvar_names

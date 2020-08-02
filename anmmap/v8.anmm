@@ -101,6 +101,7 @@
 # 427-428 look like scrollXTime and scrollYTime but didn't work when tested
 # 434 is somehow scale-related
 # 435 is Time version of 434?
+436 anchorOffset
 # 438 controls origin of a root VM - 1 is for upscaled (pixely) stuff and 2 is for full-res stuff
 # further instructions are either unknown, or google translate makes no sense (TODO: check them)
 

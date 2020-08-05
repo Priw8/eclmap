@@ -243,7 +243,7 @@
 631 lifeHide
 632 funcSet
 633 flagExtDmg
-634 setSpecialHitbox
+634 setHitboxFunc
 635 etCancel2
 636 etClear2
 637 funcCall
@@ -269,7 +269,7 @@
 
 800 enmCall
 801 enmPos
-802 unknown802
+802 broadcastInterrupt
 
 900 debug900
 

@@ -302,27 +302,8 @@
 903 debug903
 904 debug904
 
-1000 spec0
-1001 spec1
-1002 spec2
-1003 spec3
-1004 spec4
-1005 spec5
-1006 spec6
-1007 spec7
-1008 spec8
-1009 spec9
-1010 spec10
-1011 spec11
-1012 spec12
-1013 spec13
-1014 spec14
-1015 spec15
-1016 spec16
-1017 spec17
-1018 spec18
-1019 spec19
-1020 spec20
+1000 dropSeason
+1001 seasonItemDamage
 
 !gvar_names
 -10000 RAND

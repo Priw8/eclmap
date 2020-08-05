@@ -259,7 +259,7 @@
 631 lifeHide
 632 funcSet
 633 flagExtDmg
-634 unknown634
+634 setSpecialHitbox
 635 etCancel2
 636 etClear2
 637 funcCall

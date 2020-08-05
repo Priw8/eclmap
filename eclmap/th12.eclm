@@ -143,7 +143,7 @@
 411 lifeSet
 412 setBoss
 413 timerReset
-414 setNext
+414 setInterrupt
 415 setInvuln
 416 playSound
 417 setScreenShake

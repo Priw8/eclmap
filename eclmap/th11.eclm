@@ -130,7 +130,7 @@
 331 lifeSet
 332 setBoss
 333 timerReset
-334 setNext
+334 setInterrupt
 335 setInvuln
 336 playSound
 337 setScreenShake

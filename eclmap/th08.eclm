@@ -118,7 +118,7 @@
 126 valSet
 127 setBoss
 128 cardEff
-130 setNext
+130 setInterrupt
 131 lifeSet
 132 timerSet
 133 lifeThreshold

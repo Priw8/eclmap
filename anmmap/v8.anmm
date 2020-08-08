@@ -94,7 +94,7 @@
 # unknown
 420 moveBezier
 421 anchor
-# unknown
+423 colorMode  # 0 color1;  1 color2;  2 horiz gradient;  3 vert gradient
 424 rotateAuto
 425 scrollX
 426 scrollY

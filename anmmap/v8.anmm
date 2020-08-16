@@ -67,10 +67,13 @@
 304 layer
 308 flipX
 309 flipY
-311 resampleMode  # when scaling, 0=linear (blurry), 1=nearest (pixely)
-312 scrollMode  # 0=repeat 1=clamp 2=mirror
-# 313 controls how window resolution affects scaling of position and size
+311 resampleMode
+312 scrollMode
+313 resolutionMode  # TH14+
 # 314 has an effect when the parent rotates. (may also have other effects)
+315 colorizeChildren
+# 316 sets a bitflag  # TH15+
+# 317 disables it
 
 400 pos
 401 rotate
@@ -94,17 +97,19 @@
 # unknown
 420 moveBezier
 421 anchor
-423 colorMode  # 0 color1;  1 color2;  2 horiz gradient;  3 vert gradient
+423 colorMode
 424 rotateAuto
 425 scrollX
 426 scrollY
-# 427-428 look like scrollXTime and scrollYTime but didn't work when tested
+427 scrollXTime
+428 scrollYTime
 429 zoomOut  # scales UV coords (selects larger region of image file)
 430 zoomOutTime
 434 scale2  # stacks multiplicatively with scale
 435 scale2Time
 436 anchorOffset
-# 438 controls origin of a root VM - 1 is for upscaled (pixely) stuff and 2 is for full-res stuff
+437 rotationMode
+438 originMode
 # further instructions are either unknown, or google translate makes no sense (TODO: check them)
 
 # Refer to https://gist.github.com/ExpHP/88bdef8f28f46fe4af6ab2e013b75896#creating-children
@@ -116,6 +121,8 @@
 505 scriptNewPos
 506 scriptNew2Pos      # this one too...
 # 507(1) appears make an anm behave as if it has no parent.  No game really uses it...
+508 effectNew
+509 copyVars  # TH14+
 
 600 texCircle
 601 texArcEven
@@ -126,7 +133,7 @@
 606 drawRectGrad
 607 drawRectShadow
 608 drawRectShadowGrad
-609 texCylinder3D
+609 texCylinder3D  # TH14+
 610 texRing3D
 611 drawRing  # TH15+
 612 drawRectBorder  # TH16+
@@ -153,12 +160,14 @@
 # 10013-10015 are one of the position-related vectors
 # 10016-10018 is related to background camera position but still a mystery
 # 10019-10021 may be normalized direction that the background camera is facing?
-# 10023-10025 are one of the rotation-related vectors
 
 10022 RAND
 
-# 10027 seems to be a scale factor for RANDF and RANDF2? (default 1)
-# 10028 seems to be a scale factor for RANDRAD (default pi)
+# 10023-10025 are one of the rotation-related vectors
+
+10027 RANDFLIMIT    # editable scale factor for RANDF/RANDF2, default 1f
+10028 RANDRADLIMIT  # editable scale factor for RANDRAD, default pi
+10029 RANDLIMIT     # editable modulus for RAND, default 65536
 
 10030 RANDRADREP  # using the ECL RNG seed; as such, will be saved in replays
 10031 RANDFREP
@@ -185,6 +194,9 @@
 
 10022 $
 
+10027 %
+10028 %
+10029 $
 10030 %
 10031 %
 10032 %

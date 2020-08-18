@@ -1,6 +1,11 @@
 !anmmap
 !ins_names
+
+#  v8.anmm  - for TH14-TH17
+
+0 nop
 1 end
+2 static
 3 stop
 5 case
 6 wait

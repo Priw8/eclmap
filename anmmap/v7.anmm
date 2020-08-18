@@ -1,0 +1,169 @@
+!anmmap
+!ins_names
+
+#  v7.anmm  - for UFO, DS, GFW only
+
+0 nop
+1 end
+2 static
+3 sprite
+4 jmp
+5 jmpDec
+
+6 iset
+7 fset
+8 iadd
+9 fadd
+10 isub
+11 fsub
+12 imul
+13 fmul
+14 idiv
+15 fdiv
+16 imod
+17 fmod
+18 isetAdd
+19 fsetAdd
+20 isetSub
+21 fsetSub
+22 isetMul
+23 fsetMul
+24 isetDiv
+25 fsetDiv
+26 isetMod
+27 fsetMod
+
+28 ije
+29 fje
+30 ijne
+31 fjne
+32 ijl
+33 fjl
+34 ijle
+35 fjle
+36 ijg
+37 fjg
+38 ijge
+39 fjge
+
+40 isetRand
+41 fsetRand
+# 42 unknown trig, probably sin like v8?
+# 43 unknown trig, probably cos like v8?
+# 44 unknown trig, probably tan like v8?
+# 45 unknown trig, probably acos like v8?
+# 46 unknown trig, probably atan like v8?
+47 validRad
+
+48 pos
+49 rotate
+50 scale
+51 alpha
+52 color
+53 angleVel
+54 scaleGrowth
+55 alphaTimeLinear
+56 posTime
+57 colorTime
+58 alphaTime
+59 rotateTime
+60 scaleTime
+61 flipX
+62 flipY
+63 stop
+64 case
+65 anchor
+66 blendMode
+67 type
+68 layer
+# 69:  v8 ins 4
+70 scrollX
+71 scrollY
+# 72:  v8 ins 310??  # VERIFY
+# 73:  v8 ins 305??  # VERIFY
+# 74:  v8 ins 306??  # VERIFY
+75 wait
+76 color2
+77 alpha2
+78 color2Time
+79 alpha2Time
+
+80 colorMode
+# 81:  v8 ins 7
+# 82:  unknown flag
+# 83:  v8 ins 422
+84 texCircle
+# 85:  unknown flag
+# 86:  unknown flag
+87 randMode
+
+88 scriptNew
+89 resampleMode
+90 scriptNewFront
+91 scriptNewUI
+92 scriptNewUIFront
+
+93 scrollXTime
+94 scrollYTime
+
+95 scriptNewRoot
+96 scriptNewPos
+97 scriptNewRootPos
+
+# 98:  v8 ins 418
+# 99:  v8 ins 419??  # VERIFY
+100 moveBezier
+# 101:  unidentified member of texCircle family
+102 drawRect
+# 103:  unidentified member of drawRect family
+104 drawPoly
+105 drawPolyBorder
+106 zoomOut
+107 zoomOutTime
+# 108:  unidentified member of drawRect family
+# 109:  unidentified member of drawRect family
+# 110:  unidentified member of drawRect family
+
+!gvar_names
+10000 I0
+10001 I1
+10002 I2
+10003 I3
+
+10004 F0
+10005 F1
+10006 F2
+10007 F3
+
+10008 I4
+10009 I5
+
+10010 RANDRAD
+10011 RANDF
+10012 RANDF2
+
+# 10013-10015 are one of the position-related vectors
+# 10016-10018 is related to background camera position but still a mystery
+# 10019-10021 may be normalized direction that the background camera is facing?
+
+10022 RAND
+
+!gvar_types
+10000 $
+10001 $
+10002 $
+10003 $
+
+10004 %
+10005 %
+10006 %
+10007 %
+
+10008 $
+10009 $
+
+10010 %
+10011 %
+10012 %
+
+10022 $

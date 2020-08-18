@@ -1,7 +1,7 @@
 !anmmap
 !ins_names
 
-#  v8.anmm  - for TH14-TH17
+#  v8.anmm  - for TH13-TH17
 
 0 nop
 1 end

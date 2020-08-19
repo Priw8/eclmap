@@ -4,11 +4,13 @@
 #  v8.anmm  - for TH13-TH17
 
 0 nop
-1 end
+1 delete
 2 static
 3 stop
+4 stop2
 5 case
 6 wait
+7 caseReturn
 
 100 iset
 101 fset
@@ -90,14 +92,14 @@
 407 posTime
 408 colorTime
 409 alphaTime
-410 rotateTimeEx
-411 rotateTime
+410 rotateTime
+411 rotateTime2D
 412 scaleTime
 413 color2Time
 414 alpha2Time
 415 angleVel
 416 scaleGrowth  # adds to scale every frame
-417 alphaTime2  # not to be confused with 414...
+417 alphaTimeLinear
 
 # unknown
 420 moveBezier
@@ -115,7 +117,6 @@
 436 anchorOffset
 437 rotationMode
 438 originMode
-# further instructions are either unknown, or google translate makes no sense (TODO: check them)
 
 # Refer to https://gist.github.com/ExpHP/88bdef8f28f46fe4af6ab2e013b75896#creating-children
 500 scriptNew
@@ -125,7 +126,7 @@
 504 scriptNewRoot   # create vm with no parent
 505 scriptNewPos    # create at an offset
 506 scriptNewRootPos
-# 507(1) appears make an anm behave as if it has no parent.  No game really uses it...
+# 507(1) appears to make an anm behave as if it has no parent.  No game really uses it...
 508 effectNew
 509 copyVars  # TH14+
 
@@ -184,24 +185,35 @@
 10001 $
 10002 $
 10003 $
-
 10004 %
 10005 %
 10006 %
 10007 %
-
 10008 $
 10009 $
-
 10010 %
 10011 %
 10012 %
-
+10013 %
+10014 %
+10015 %
+10016 %
+10017 %
+10018 %
+10019 %
+10020 %
+10021 %
 10022 $
-
+10023 %
+10024 %
+10025 %
+10026 %
 10027 %
 10028 %
 10029 $
 10030 %
 10031 %
 10032 %
+10033 %
+10034 %
+10035 %

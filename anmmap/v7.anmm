@@ -4,7 +4,7 @@
 #  v7.anmm  - for UFO, DS, GFW only
 
 0 nop
-1 end
+1 delete
 2 static
 3 sprite
 4 jmp
@@ -76,7 +76,7 @@
 66 blendMode
 67 type
 68 layer
-# 69:  v8 ins 4
+69 stop2
 70 scrollX
 71 scrollY
 # 72:  v8 ins 310??  # VERIFY
@@ -89,7 +89,7 @@
 79 alpha2Time
 
 80 colorMode
-# 81:  v8 ins 7
+81 caseReturn
 # 82:  unknown flag
 # 83:  v8 ins 422
 84 texCircle
@@ -124,6 +124,14 @@
 # 109:  unidentified member of drawRect family
 # 110:  unidentified member of drawRect family
 
+# === TH 12.5+ ===
+# 111:  unknown biflag
+# 112:  v8 ins 507??  # VERIFY
+
+# === TH 12.8+ ===
+113 rotateTime2D
+# 114:  unidentified member of texCircle family
+
 !gvar_names
 10000 I0
 10001 I1
@@ -153,17 +161,22 @@
 10001 $
 10002 $
 10003 $
-
 10004 %
 10005 %
 10006 %
 10007 %
-
 10008 $
 10009 $
-
 10010 %
 10011 %
 10012 %
-
+10013 %
+10014 %
+10015 %
+10016 %
+10017 %
+10018 %
+10019 %
+10020 %
+10021 %
 10022 $

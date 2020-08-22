@@ -18,6 +18,6 @@ As of now, this repository contains mappings for ECL and ANM, as thecl and thanm
   
 **anmmaps**:
 *Note: anmmaps are early WIP and instruction names could change between versions without warning.*
-- TH06-TH11 - none at the moment
-- TH12-TH12.8 - `v7.anmm`
+- TH06-TH09 - none at the moment
+- TH09.5-TH12.8 - `v4.anmm`
 - TH13-TH17 - `v8.anmm`

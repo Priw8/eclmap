@@ -163,7 +163,10 @@
 10011 RANDF
 10012 RANDF2
 
-# 10013-10015 are one of the position-related vectors
+10013 POS_X
+10014 POS_Y
+10015 POS_Z
+
 # 10016-10018 is related to background camera position but still a mystery
 # 10019-10021 may be normalized direction that the background camera is facing?
 
@@ -178,7 +181,6 @@
 10030 RANDRADREP  # using the ECL RNG seed; as such, will be saved in replays
 10031 RANDFREP
 10032 RANDF2REP
-
 
 !gvar_types
 10000 $

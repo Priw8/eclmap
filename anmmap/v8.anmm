@@ -7,7 +7,7 @@
 1 delete
 2 static
 3 stop
-4 stop2
+4 stopHide
 5 case
 6 wait
 7 caseReturn

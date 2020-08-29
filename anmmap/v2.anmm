@@ -1,7 +1,8 @@
 !anmmap
 !ins_names
 
-#  v3.anmm  - for IN, PoFV only
+#  v2.anmm  - for version 2:  PCB
+#           - and version 3:  IN, PoFV (but not StB)
 
 0 nop
 1 delete
@@ -22,14 +23,14 @@
 15 alphaTimeLinear
 # 16  sets the value of one flag and clears another?
 17 posTimeLinear
-18 posTimeMode4
-19 posTimeMode6
+18 posTimeDecel   # mode 4 - quadratic ease out
+19 posTimeDecel2  # mode 6 - quartic ease out
 20 stop
 21 case
 # 22  enables two bitflags
-23 stop2
+23 stopHide
 # 24  sets alternate pos flag?!  # VERIFY
-# 25  sets a word field
+# 25  sets a word field. Might be rotateAuto? Why a whole word?
 26 scrollNowX
 27 scrollNowY
 # 28  sets state of flag
@@ -70,7 +71,7 @@
 61 fsin
 62 fcos
 63 ftan
-# 64 unknown trig, probably acos like v8?
+64 acos
 65 fatan
 66 validRad
 

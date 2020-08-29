@@ -49,11 +49,11 @@
 
 40 isetRand
 41 fsetRand
-# 42 unknown trig, probably sin like v8?
-# 43 unknown trig, probably cos like v8?
-# 44 unknown trig, probably tan like v8?
-# 45 unknown trig, probably acos like v8?
-# 46 unknown trig, probably atan like v8?
+42 fsin
+43 fcos
+44 ftan
+45 facos
+46 fatan
 47 validRad
 
 48 pos
@@ -77,7 +77,7 @@
 66 blendMode
 67 type
 68 layer
-69 stop2
+69 stopHide
 70 scrollX
 71 scrollY
 # 72:  v8 ins 310??  # VERIFY

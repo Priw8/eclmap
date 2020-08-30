@@ -51,13 +51,13 @@
 78 deci
 79 stackSin
 80 stackCos
-81 mathCirclePos
+81 circlePos
 82 validRad
 83 wait
 84 negi
 85 negf
 86 squareSum
-87 mathAngle
+87 getAngle
 88 stackSqrt
 89 linearFunc
 90 pointRotate

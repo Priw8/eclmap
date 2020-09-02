@@ -100,8 +100,8 @@
 
 88 scriptNew
 89 resampleMode
-90 scriptNewFront
-91 scriptNewUI
+90 scriptNewUI
+91 scriptNewFront
 92 scriptNewUIFront
 
 93 scrollXTime

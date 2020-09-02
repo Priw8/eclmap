@@ -120,8 +120,8 @@
 
 # Refer to https://gist.github.com/ExpHP/88bdef8f28f46fe4af6ab2e013b75896#creating-children
 500 scriptNew
-501 scriptNewFront
-502 scriptNewUI
+501 scriptNewUI
+502 scriptNewFront
 503 scriptNewUIFront
 504 scriptNewRoot   # create vm with no parent
 505 scriptNewPos    # create at an offset

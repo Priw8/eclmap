@@ -21,7 +21,7 @@
 13 angleVel
 14 scaleGrowth
 15 alphaTimeLinear
-# 16  sets the value of one flag and clears another?
+16 blendAdditiveSet
 17 posTimeLinear
 18 posTimeDecel   # mode 4 - quadratic ease out
 19 posTimeDecel2  # mode 6 - quartic ease out
@@ -91,7 +91,7 @@
 79 wait
 80 scrollX
 81 scrollY
-# 82   set both bits from ins_16 as a two-bit field
+82 blendMode
 # 83   dword field
 84 color2
 85 alpha2

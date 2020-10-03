@@ -72,8 +72,12 @@
 302 type
 303 blendMode
 304 layer
+305 zWriteDisable
+# 306 bitflag, camera related
+307 randMode  # no known effect in v8 but games still use it
 308 flipX
 309 flipY
+310 visible
 311 resampleMode
 312 scrollMode
 313 resolutionMode  # TH14+
@@ -137,8 +141,8 @@
 604 drawPoly
 605 drawPolyBorder
 606 drawRectGrad
-607 drawRectShadow
-608 drawRectShadowGrad
+607 drawRectRot
+608 drawRectRotGrad
 609 texCylinder3D  # TH14+
 610 texRing3D
 611 drawRing  # TH15+

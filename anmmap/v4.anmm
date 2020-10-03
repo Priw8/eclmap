@@ -80,8 +80,8 @@
 69 stopHide
 70 scrollX
 71 scrollY
-# 72:  v8 ins 310??  # VERIFY
-# 73:  v8 ins 305??  # VERIFY
+72 visible
+73 zWriteDisable
 # 74:  v8 ins 306??  # VERIFY
 75 wait
 76 color2
@@ -115,15 +115,15 @@
 # 99:  v8 ins 419??  # VERIFY
 100 moveBezier
 # 101:  unidentified member of texCircle family
-102 drawRect
-# 103:  unidentified member of drawRect family
+102 spriteRand
+103 drawRect
 104 drawPoly
 105 drawPolyBorder
 106 zoomOut
 107 zoomOutTime
-# 108:  unidentified member of drawRect family
-# 109:  unidentified member of drawRect family
-# 110:  unidentified member of drawRect family
+108 drawRectGrad
+109 drawRectRot
+110 drawRectRotGrad
 
 # === TH 12.5+ ===
 # 111:  unknown biflag

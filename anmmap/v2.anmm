@@ -27,15 +27,15 @@
 19 posTimeDecel2  # mode 6 - quartic ease out
 20 stop
 21 case
-# 22  enables two bitflags
+22 anchorTopLeft
 23 stopHide
-# 24  sets alternate pos flag?!  # VERIFY
+24 posMode
 # 25  sets a word field. Might be rotateAuto? Why a whole word?
 26 scrollNowX
 27 scrollNowY
-# 28  sets state of flag
+28 visible
 29 scaleTimeLinear
-# 30  sets state of flag
+30 zWriteDisable
 # 31  sets state of flag
 32 posTime
 33 colorTime

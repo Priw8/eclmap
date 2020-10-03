@@ -17,8 +17,8 @@
 10 angleVel
 11 scaleGrowth
 12 alphaTimeLinear
-# 13 "alpha blending" acc. to pytouhou.linkmauve.fr but I want to check
-# 14 "additive blending" acc. to pytouhou.linkmauve.fr but I want to check
+13 blendAdditive
+14 blendDefault
 15 static
 16 spriteRand
 17 pos
@@ -27,15 +27,15 @@
 20 posTimeDecel2  # quartic.  pytouhou called this "posTimeAccel"?!
 21 stop
 22 case
-23 anchorBottomLeft
+23 anchorTopLeft
 24 stopHide
 25 posMode
 # 26 - sets word-sized field. Supposedly this is rotateAuto? Why a whole word?
 27 scrollNowX
 28 scrollNowY
-29 setVisible
+29 visible
 30 scaleTimeLinear
-# 31 some bitflag
+31 zWriteDisable
 
 !gvar_names
 # EoSD has no vars

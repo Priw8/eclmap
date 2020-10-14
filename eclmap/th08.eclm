@@ -8,6 +8,7 @@
 5 loop
 6 iset
 7 fset
+8 iset_rand_sign
 9 fset_rand_sign
 10 iadd
 11 isub

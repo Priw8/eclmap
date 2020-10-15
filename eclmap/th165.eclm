@@ -302,6 +302,23 @@
 903 debug903
 904 debug904
 
+1000 sceneClear             # Ends the scene as a victory
+1001 sceneFail              # Ends the scene as a game over
+1002 photoBonusMultiplier   # Set value used to determine "photo views", "like" and "faved" values when a photo is taken, something gets multiplied by it (1.0f by default)
+# th165.exe+1F5A6: 1003 - sets or clears flag 0x8 in flags_high; this bitflag is checked when a photo of the enemy is taken to determine... uh... something! it's an if-else, checked at th165.exe+4B4CA
+# th165.exe+1F54F: 1004 - calls a pretty invloved method on photoManager
+1005 effFadeout             # Makes the entire screen fade to black in the given amount of frames
+# th165.exe+1F60A: 1006 - calls some metod on the supervisor
+1007 effFadeoutStg          # Makes the inner area of the STG frame fade to black in the given amount of frames
+1008 playerAllowCamera      # Determines whether camera can be used; 1 allows using camera, 0 completely removes it
+# th165.exe+1F64B: 1009 - sets some value in player struct, this value is used multiple times when a photo is taken
+1010 cameraItemMult         # Sets how much a single cancel item adds to the camera charge (a multiplier)
+1011 selfPhotoValue         # Sets a value that determines the bonus for getting the enemy in the photo (every enemy has its own specific one), default is 10
+# th165.exe+1F694: 1012 - sets some value related to photos (accessed when photo of enemy is taken). If the value is nonzero, then it's used as an index in a byte array when photo enemy is taken, and the value at the given index gets set to 1. It is unknown what the array is (refer to code at th16.exe+1A830)
+1013 takeSelfie             # Makes the enemy take a photo of itself (lul)
+1014 playerDisableShoot     # Disables player shooting for a given amount of frames
+
+
 !gvar_names
 -10000 RAND
 -9999 RANDF

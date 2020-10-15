@@ -314,7 +314,7 @@
 # th165.exe+1F64B: 1009 - sets some value in player struct, this value is used multiple times when a photo is taken
 1010 cameraItemMult         # Sets how much a single cancel item adds to the camera charge (a multiplier)
 1011 selfPhotoValue         # Sets a value that determines the bonus for getting the enemy in the photo (every enemy has its own specific one), default is 10
-# th165.exe+1F694: 1012 - sets some value related to photos (accessed when photo of enemy is taken). If the value is nonzero, then it's used as an index in a byte array when photo enemy is taken, and the value at the given index gets set to 1. It is unknown what the array is (refer to code at th16.exe+1A830)
+1012 selfPhotoBonus         # Sets the additional bonus for taking picture of the enemy (in form of a #hashtag)
 1013 takeSelfie             # Makes the enemy take a photo of itself (lul)
 1014 playerDisableShoot     # Disables player shooting for a given amount of frames
 

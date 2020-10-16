@@ -163,17 +163,21 @@
 0 enmCreate
 1 enmCreateM
 2 enmCreateRand
+3 enmCreateRand2
 4 enmCreateRandM
+5 enmCreateRand2M
 6 readMsg
 7 waitMsg
 8 runEvent
+9 collectItems
 10 waitEnemy
+11 enmCreateDropExtra
+12 enmCreateDropExtraM
 13 waitTimeline
 14 resumeTimeline
-15 enmCreate15
+15 enmCreateForce
 16 showRetryMenu
 
-#FIXME# 
 !gvar_names
 10000 I0
 10001 I1

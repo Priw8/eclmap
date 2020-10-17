@@ -165,7 +165,7 @@
 517 setScreenShake
 518 dialogRead
 519 dialogWait
-520 unknown520
+520 bossWait
 521 setTimeout
 522 spellEx
 523 spellEnd
